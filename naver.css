@@ -1,0 +1,25 @@
+/*cascading stylesheet 덮어씌우다 */
+/* 선택자 (selector) */
+
+
+#header-center {
+margin : 0 auto ;
+width : 1080px;
+}
+
+/* >h1 자식태그 css적용 그냥 띄어쓰기하면 자손 (자식자속 구분) */
+#header-search > h1 {
+width: 280px;
+display: inline-block;
+}
+
+/* #header-center h1 자손선택자*/
+
+#header-search h2 {
+display: none;
+}
+
+#header-search fieldset {
+width: 520px;
+display: inline-block;
+}

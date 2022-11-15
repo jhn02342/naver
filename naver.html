@@ -5,52 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>세영Naver</title>
-    <link rel="shortcut icon" type="image/x-icon" href="이미지/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="naver.css">
 </head>
 <body>
-  <div>
-  <h1>
-    <a href="https://www.naver.com" target="_blank" >네이버</a> <!-- 주석(comment)입니다 --><!-- 속성(attribute)입니다 -->
-  </h1>
-  <H2>검색창</H2>
-   <fieldset>
-    <legend>검색</legend>
-    <input type="checkbox" />
-    <button>검색</button>
+  <header>
+    <div id="header-center"> <!-- 가운데 정렬용 div *div는 항상 100%너비를챙김-->
+      <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
+      <!-- css파일을 쓰지않고 html에 직접쓰는걸 인라인스타일이라고함 / 추천하지는않음 -->
+      <div>
+        <div style="display: inline-block">네이버를 시작페이지로</div>
+        <div style="display: inline-block">쥬니어네이버</div>
+        <div style="display: inline-block">해피빈</div>
+      </div>
+        <div id="header-search">
+          <h1>
+          <a href="https://www.naver.com" target="_blank" >네이버</a> 
+          <!-- 주석(comment)입니다 -->
+          <!-- 속성(attribute)입니다 -->
+          </h1>
+          <h2>검색창</h2>
+          <fieldset>
+            <legend>검색</legend>
+            <input />
+            <button>검색</button>
      <!-- <input type="checkbox" /`중복체크`>
     <input type="radio" name="group">
     <input type="radio" name="group" `그룹이면 하나밖에체크안됨`> -->
-    <textarea></textarea>
-   </fieldset>
-  </div>
-  <div>
+          </fieldset>
+          </div>
+    </div>
+  </header>
+  <nav>
    <ul>
     <li>메일</li>
     <li>카페</li>
     <li>블로그</li>
     <li>지식인</li>
+    <li>쇼핑</li>
     <li>네이버페이</li>
     <li>네이버쇼핑</li>
    </ul>
-  </div>
-  <div>
+  </nav>
+  <main>
    <h2>실시간 검색어</h2>
    <h3>세영뉴스</h3>
     <ol>
-      <li>충격) 함우성 언젠간 꺽는다...</li>
+      <li>충격) 함우성 언젠간 꺾는다...</li>
       <li>오늘은 꼭 많이듣자.</li>
       <li>지우오늘 스케일b </li>
     </ol>
     <h3>언론사목록</h3>
      <ul>
-      <li><img src="./이미지/국민일보.png" alt="국민일보";></li>
-      <li><img src="./이미지/매일경제.png" alt="매일경제";></li>
+      <li><img src="/005.png" alt="국민일보";></li>
+      <li><img src="/009.png" alt="매일경제";></li>
     </ul>
   <h2><i>로그인</i></h2>
-</div>
-<div>공지사항</div>
-<div>creators</div>
-<div>회사소개</div>
-
+  </main>
+  <footer>
+    <div>공지사항</div>
+    <div>creators</div>
+    <div>회사소개</div>
+  </footer>
 </body>
 </html>
