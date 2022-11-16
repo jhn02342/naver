@@ -1,6 +1,9 @@
 /*cascading stylesheet 덮어씌우다 */
 /* 선택자 (selector) */
 
+* {
+  box-sizing: border-box;
+}
 
 #header-center {
 margin : 0 auto ;
@@ -8,18 +11,87 @@ width : 1080px;
 }
 
 /* >h1 자식태그 css적용 그냥 띄어쓰기하면 자손 (자식자속 구분) */
-#header-search > h1 {
-width: 280px;
-display: inline-block;
+
+#header-search a {
+    text-decoration: none;
+    vertical-align: middle;
 }
 
+#header-search h1 {
+width: 125px;
+height: 95px;
+display: inline-block;
+/*background-image: url(https://s.pstatic.net/static/www/mobile/edit/20221116/mobile_165114382593.png);
+background-position: -5px -10px;
+background-repeat: no-repeat; */
+
+background: url(https://s.pstatic.net/static/www/mobile/edit/20221116/mobile_165114382593.png) -5px -10px no-repeat;
+}
+
+#header-search h1 span {
+   display: none;
+}
 /* #header-center h1 자손선택자*/
 
-#header-search h2 {
-display: none;
-}
 
 #header-search fieldset {
-width: 520px;
+    margin-left: 10px;
+    /* padding-left: 10px; */
+    /* padding-top: 12px; */
+    /* padding-right: 0; */
+    /* padding-bottom: 12px; */
+     padding: 12px 0 12px 10px; /* 한번에 써줄수있음 시계방향으로 */ 
+    border: 2px solid #03cf5d; /* hex 표기법 */
+    width: 520px;
+height: 49px;
 display: inline-block;
+vertical-align: middle;
+position: relative;
 }
+
+#header-search fieldset input {
+  border: none;
+  padding: 0;
+  outline: none;
+  vertical-align:top
+  width : 405px;
+  height: 23px;
+
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+#header-search fieldset button {
+  width: 49px;
+  height: 49px;
+  cursor: pointer;
+  border: none;
+  background-color: #19ce60;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  
+  
+
+}
+#search-image {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  background-image: url(https://s.pstatic.net/static/www/img/uit/sp_main_947f65.png);
+  background-position-x: -420px;
+  background-position-y: -24px;
+  background-size: 442px 442px;
+  background-repeat: no-repeat;
+  
+
+
+}
+
