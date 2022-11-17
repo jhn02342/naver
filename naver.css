@@ -107,11 +107,15 @@ nav li span:first-child {
   display: inline-block;
   background-image: url(https://github.com/ZeroCho/html-css-naver/blob/master/ch8/sp_nav.png?raw=true);
   background-repeat : no-repeat;
+  margin-left: 14px;
 }
+
+/* 유지보수면에서는 클래스주는게 훨낫다 ~ */
 
 nav li:first-child span:first-child {
   width: 25px;
   background-position : 0 -285px;
+  margin-left: 0;
 
 }
 
@@ -128,4 +132,14 @@ nav li:nth-child(3) span:first-child {
 nav li:nth-child(4) span:first-child {
   width: 40px;
   background-position : -101px -156px;
+}
+
+nav li:nth-child(5) span:first-child {
+  width: 26px;
+  background-position : -279px -156px;
+}
+
+nav li:nth-child(6) span:first-child {
+  width: 25px;
+  background-position : -70px -285px;
 }
