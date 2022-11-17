@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-#header-center {
+.center-align {
 margin : 0 auto ;
 width : 1080px;
 }
@@ -90,8 +90,42 @@ position: relative;
   background-position-y: -24px;
   background-size: 442px 442px;
   background-repeat: no-repeat;
-  
+}
 
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li span:first-child {
+  height: 16px;
+  display: inline-block;
+  background-image: url(https://github.com/ZeroCho/html-css-naver/blob/master/ch8/sp_nav.png?raw=true);
+  background-repeat : no-repeat;
+}
+
+nav li:first-child span:first-child {
+  width: 25px;
+  background-position : 0 -285px;
 
 }
 
+nav li:nth-child(2) span:first-child {
+  width: 27px;
+  background-position : -279px -52px;
+}
+
+nav li:nth-child(3) span:first-child {
+  width: 40px;
+  background-position : -100px -182px;
+}
+
+nav li:nth-child(4) span:first-child {
+  width: 40px;
+  background-position : -101px -156px;
+}

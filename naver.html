@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <div id="header-center"> <!-- 가운데 정렬용 div *div는 항상 100%너비를챙김-->
+    <div class="center-align"> <!-- 가운데 정렬용 div *div는 항상 100%너비를챙김-->
       <!-- 속성명: 속성값; 속성명2: 속성값2;  -->
       <!-- css파일을 쓰지않고 html에 직접쓰는걸 인라인스타일이라고함 / 추천하지는않음 -->
       <div>
@@ -31,7 +31,7 @@
           <h2 class="blind">검색창</h2>
           <fieldset>
             <legend class="blind">검색</legend>
-            <input style="vertical-align:top">
+            <input />
             <button>
               <span id="search-image"></span>
             </button>
@@ -42,24 +42,31 @@
           </div>
     </div>
   </header>
-  <nav>
+<nav>
+    <div class="center-align">
    <ul>
-    <li>메일</li>
-    <li>카페</li>
-    <li>블로그</li>
-    <li>지식인</li>
-    <li>쇼핑</li>
-    <li>네이버페이</li>
-    <li>네이버쇼핑</li>
+    <li>
+      <a href="">
+        <span ></span
+          ><span class="blind">메일</span>
+        </a>
+      </li>
+    <li><a href=""><span></span><span class="blind">카페</span></a></li>
+    <li><a href=""><span></span><span class="blind">블로그</span></a></li>
+    <li><a href=""><span></span><span class="blind">지식인</span></a></li>
+    <li><a href=""><span></span><span class="blind">쇼핑</span></a></li>
+    <li><a href=""><span></span><span class="blind">네이버페이</span></a></li>
+    <li><a href=""><span></span><span class="blind">네이버쇼핑</span></a></li>
    </ul>
-  </nav>
+  </div>
+</nav>
   <main>
    <h2>실시간 검색어</h2>
    <h3>세영뉴스</h3>
     <ol>
-      <li>충격) 함우성 언젠간 꺾는다...</li>
-      <li>오늘은 꼭 많이듣자.</li>
-      <li>지우오늘 스케일b 7R</li>
+      <li>속보) 준우씨 요즘 무너진 생활패턴</li>
+      <li>늘 충격)우성씨 때문에 닭멸종위기!</li>
+      <li>지우어제 스케일b 7R</li>
     </ol>
     <h3>언론사목록</h3>
      <ul>
