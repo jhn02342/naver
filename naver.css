@@ -5,6 +5,24 @@
 box-sizing: border-box;
 }
 
+header{
+height: 170px;
+}
+
+#fixed {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.relative {
+  position: relative;
+}
 .center-align {
 margin : 0 auto ;
 width : 1080px;
@@ -12,6 +30,7 @@ width : 1080px;
 
 #header-top {
   float: right;
+  margin-top: -2px;
 }
 
 #header-top div:first-child {
@@ -48,6 +67,7 @@ width : 1080px;
 
 /* >h1 자식태그 css적용 그냥 띄어쓰기하면 자손 (자식자속 구분) */
 
+
 #header-search a {
   text-decoration: none;
   vertical-align: middle;
@@ -62,6 +82,10 @@ background-position: -5px -10px;
 background-repeat: no-repeat; */
 
   background: url(https://s.pstatic.net/static/www/mobile/edit/20221116/mobile_165114382593.png) -5px -10px no-repeat;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  left: 1px;
 }
 
 #header-search h1 span {
@@ -69,9 +93,13 @@ background-repeat: no-repeat; */
 }
 /* #header-center h1 자손선택자*/
 
+#header-search h2 {
+  display: none;
+}
+
 
 #header-search fieldset {
-  margin-left: 10px;
+  margin-left: 18px;
     /* padding-left: 10px; */
     /* padding-top: 12px; */
     /* padding-right: 0; */
@@ -90,9 +118,15 @@ background-repeat: no-repeat; */
   padding: 0;
   outline: none;
   vertical-align: top;
-  width : 405px;
+  width : 378px;
   height: 23px;
+margin-right: 10px;
+}
 
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Dotum, '돋음',Helvetica, "Apple SD gothic Neo", sans-serif;
 }
 
 .blind {
@@ -113,10 +147,32 @@ background-repeat: no-repeat; */
   position: absolute;
   right: -2px;
   top: -2px;
-  
-  
-
+  vertical-align: middle;
 }
+  
+#search-keyboard {
+ background-image: url(https://github.com/ZeroCho/html-css-naver/blob/master/ch5/sp_search.png?raw=true); 
+ background-repeat: no-repeat;
+ background-position: -33px -60px;
+ width: 19px;
+ height: 11px;
+ display: inline-block;
+ margin: 0 6px; 
+ vertical-align: middle;
+}
+
+#search-history {
+  background-image: url(https://github.com/ZeroCho/html-css-naver/blob/master/ch5/sp_search.png?raw=true); 
+  background-repeat: no-repeat;
+  background-position: -87px -60px;
+  width: 9px;
+  height: 4px;
+  display: inline-block;
+  margin: 0 6px;
+  vertical-align: middle;
+}
+
+
 #search-image {
   width: 22px;
   height: 22px;
@@ -128,9 +184,17 @@ background-repeat: no-repeat; */
   background-repeat: no-repeat;
 }
 
+nav {
+  
+  height: 46px;
+  border-top: 1px solid #f1f3f6 ;
+  border-bottom: 1px solid #d1d8e4;
+}
+
 nav ul {
+  display: inline-block;
   margin: 0;
-  padding: 0;
+  padding: 16px 0 0 4px;
   list-style: none;
 }
 
@@ -143,7 +207,7 @@ nav li span:first-child {
   display: inline-block;
   background-image: url(https://github.com/ZeroCho/html-css-naver/blob/master/ch8/sp_nav.png?raw=true);
   background-repeat : no-repeat;
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 /* 유지보수면에서는 클래스주는게 훨낫다 ~ */
@@ -178,4 +242,86 @@ nav li:nth-child(5) span:first-child {
 nav li:nth-child(6) span:first-child {
   width: 25px;
   background-position : -70px -285px;
+}
+
+nav li:nth-child(7) span:first-child{
+  width: 35px;
+  background-position: -125px -130px;
+}
+
+nav li:nth-child(8) span:first-child{
+   padding-left: 0;
+  background-position: -279px -280px;
+}
+
+nav li:nth-child(9) span:first-child{
+  width: 26px;
+  background-position: -128px -104px;
+}
+
+nav li:nth-child(10) span:first-child{
+  width: 26px;
+  background-position: -36px -259px;
+}
+
+nav li:nth-child(11) span:first-child{
+  width: 39px;
+  background-position: -151px -156px;
+}
+
+nav li:nth-child(12) span:first-child{
+  width: 26px;
+  background-position: -279px -130px;
+}
+
+nav li:nth-child(13) span:first-child{
+  width: 26px;
+  background-position: -234px -233px;
+}
+
+nav li:nth-child(14) span:first-child{
+  width: 26px;
+  background-position: -72px -259px;
+}
+
+nav li:nth-child(15) span:first-child{
+  width: 13px;
+  background-position: -140px -78px;
+}
+
+nav li:nth-child(16) span:first-child{
+  width: 26px;
+  background-position: -279px -0px;
+}
+
+nav li.more:first-child span:first-child {
+  width: 55px;
+  background-position: 0 -104px;
+}
+
+.nav-divider {
+ display: inline-block;
+  margin: 18px 16px 0;
+  width: 1px;
+  height: 14px;
+  background: #ebeef3;
+
+}
+
+#search-ranking {
+  position: absolute;
+  top: 16px;
+  right: 100px;
+}
+
+#rank-number {
+  margin-top: -9px;
+  color: #00ab33;
+  font-size: 16px;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+  background-color: #f2f4f7;
 }
